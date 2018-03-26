@@ -8,8 +8,9 @@ import * as actions from '../actions';
 
 class MapScreen extends Component {
   static navigationOptions = {
-    headerStyle: {
-      marginTop: Platform.OS === 'android' ? 24 : 0
+    title: 'Map',
+    tabBarIcon: ({ tintColor }) => {
+      return <Icon name="my-location" size={30} color={tintColor} />;
     }
   }
 
